@@ -60,9 +60,32 @@ class App {
         console.log("hier:")
         console.log(aArgument)
     }
+
+    mario(){
+        console.log("MARIO!!")
+    }
+
+    bwahaha(){
+        return "BWAHAHA!!!"
+    }
+
+    optellen(getal1, getal2){
+        return getal1 + getal2
+    }
+
+    aftrekken(getal1, getal2){
+        return getal1 - getal2
+    }
 }
 
 let app = new App();
 app.runApplication();
 app.newClassFunction();
 app.anotherFunctionWithArguments("mijn argument is iets...");
+app.mario()
+let bwahaha = app.bwahaha()
+console.log(bwahaha)
+let optellenResultaat = app.optellen(1, 2)
+console.log(optellenResultaat)
+let aftrekkenResultaat = app.aftrekken(10, 5)
+console.log(aftrekkenResultaat)
