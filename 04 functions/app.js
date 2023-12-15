@@ -61,19 +61,19 @@ class App {
         console.log(aArgument)
     }
 
-    mario(){
+    mario() {
         console.log("MARIO!!")
     }
 
-    bwahaha(){
+    bwahaha() {
         return "BWAHAHA!!!"
     }
 
-    optellen(getal1, getal2){
+    optellen(getal1, getal2) {
         return getal1 + getal2
     }
 
-    aftrekken(getal1, getal2){
+    aftrekken(getal1, getal2) {
         return getal1 - getal2
     }
 }
