@@ -2,7 +2,6 @@ class App
 {
     runApplication()
     {
-        
         let headers = document.getElementsByTagName("h1")
         this.LogArray(headers)
 
@@ -18,6 +17,11 @@ class App
         headersByCssClass[2].innerHTML = "commentaar"
         headersByCssClass[3].innerHTML = "beste forum posts"
         headersByCssClass[4].innerHTML = "pricewatch"
+
+        let data = [headersByCssClass[0].innerHTML, headersByCssClass[1].innerHTML, headersByCssClass[2].innerHTML, headersByCssClass[3].innerHTML, headersByCssClass[4].innerHTML]
+        for (let i = 0; i < data.length; i++) {
+            headersByCssClass[i].innerHTML = `${i}: ${data[i]}`
+        }
 
         console.log("hello world!");
         let artists = ["Sabaton", "Pascal Michael Stiefel", "Amaranthe", "Beast in Black", "Powerwolf"]
