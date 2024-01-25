@@ -4,10 +4,9 @@ class App
     {
         console.log("hello world!");
         let uiButton = document.getElementById("myButton")
-        let localeFunction = function (e){
+        uiButton.addEventListener("click",(e)=>{
             console.log("click!")
-        }
-        uiButton.addEventListener("click",localeFunction)
+        })
     }
 }
 
