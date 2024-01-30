@@ -7,19 +7,21 @@ class App {
 
 class Greet {
     constructor() {
+        this.greeting = "Greetings!"
     }
 
     showGreeting() {
-        console.log("Greetings!")
+        console.log(`greeting van binnen: ${this.greeting}`)
     }
 }
 
 class GoodBye {
     constructor() {
+        this.farewell = "Bye bye"
     }
 
     showBye() {
-        console.log("Bye Bye")
+        console.log(`Bye Bye van buiten: ${this.farewell}`)
     }
 }
 
@@ -37,6 +39,8 @@ bye.showBye()
 
 greet.showGreeting()
 bye.showBye()
+
+console.log(`greeting van buiten: ${greet.greeting}`)
 
 let app = new App();
 app.runApplication();
